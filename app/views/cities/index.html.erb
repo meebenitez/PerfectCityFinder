@@ -1,0 +1,9 @@
+<% if @cities %>
+    <ul>
+        <% @cities.each do |city| %>
+            <li><%= city.name %></li>
+        <% end %>
+    </ul>
+<% else %>
+    There are no cities created
+<% end %>
