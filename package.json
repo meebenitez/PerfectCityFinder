@@ -1,5 +1,17 @@
 {
   "name": "perfect-city-finder",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^3.2.2",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react_ujs": "^2.4.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
 }

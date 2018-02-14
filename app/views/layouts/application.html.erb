@@ -6,9 +6,36 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Roboto" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="gutter">
+      <div class="container">
+          <div class="header">
+              <div class="underline">
+                  <h1><%= image_tag("skyline.png", :class=> "logo") %>PerfectCityFinder</h1>
+                  <div class="login">Hi, Mary <span class="dropdown">&or;</span></div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="main-container">
+              <%= yield %>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

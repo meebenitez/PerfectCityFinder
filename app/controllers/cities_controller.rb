@@ -1,7 +1,10 @@
+
+
 class CitiesController < ApplicationController
 
 def index
-    @cities = City.all
+    @cities = City.where(nil)
+    @cities = City.poverty_rate(15)
 end
 
 
@@ -19,8 +22,9 @@ end
 private
 
 def city_params
-    params.require(:city).permit(:name, :short_state, :long_state, :census_id)
+    params.require(:city).permit(:name, :short_state, :long_state, :census_id, :poverty)
 end
+
 
 
 end

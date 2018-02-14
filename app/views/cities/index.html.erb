@@ -1,9 +1,65 @@
-<% if @cities %>
-    <ul>
-        <% @cities.each do |city| %>
-            <li><%= city.name %></li>
-        <% end %>
-    </ul>
-<% else %>
-    There are no cities created
-<% end %>
+<%= javascript_pack_tag 'application' %>
+<div class="left-col">
+        <h2>827 Great places to live.</h2>
+        <br>
+        <div class="city-item">
+            <div class="icon-container"><%= image_tag("city.png", :class => "city-icon") %></div>
+            <div class="info-container">
+                <div class="city-name-container"><h3>Reno NV</h3></div>
+                <div class="stat-container">Pop. 250K | Crime Index: 34 | Liberal | Avg Home Price: $250K <a href=#>more</a></div>
+            </div>
+            <div class="heart-container"><div class="center-heart">♥</div></div>
+        </div>
+        <%= react_component("App", { greeting: "Hello" }) %>
+    </div>
+    <div class="right-col">
+        <div class="col-container">
+            <div>
+                <br>
+            <strong>REGION:</strong><span style="color: red;">*</span>
+            <br>
+                <select>
+                    <option>Pacific Northwest</option>
+                    <option>Midwest</option>
+                    <option>West Coast</option>
+                </select>
+            <br>
+            </div>
+            <div>
+                <br>
+                <strong>POPULATION:</strong><span style="color: red;">*</span>
+                <br>
+                    <select>
+                        <option>Big (pop. 75K - 150K)</option>
+                        <option>Mid-Size (pop 35K - 75K)</option>
+                    </select>
+                <br>
+            </div>
+            <div>
+                <br>
+                <br>
+                <strong>FILTERS:</strong>
+                <br>
+                <div class="on-filters">
+                    <div class="on-style"><input type="checkbox" checked="checked"> Low Crime</div>
+                    <div class="on-style"><input type="checkbox" checked="checked"> Good Schools</div>
+                    <div class="on-style"><input type="checkbox" checked="checked"> Avg. Home Price: $250K</div>
+                    <div class="on-style"><input type="checkbox" checked="checked"> Politics: Left</div>
+                </div>
+                <div class="off-filters"></div>
+                    <div class="off-style"><input type="checkbox"> Fast Internet</div>
+                    <div class="off-style"><input type="checkbox"> Walkable</div>
+                    <div class="off-style"><input type="checkbox"> Racial Diversity</div>
+                    <div class="off-style"><input type="checkbox"> Bike Friendly</div>
+                    <div class="off-style"><input type="checkbox"> Avg. Household Income</div>
+                    <div class="off-style"><input type="checkbox"> % College Grads</div>         
+                </div>
+                <div class="about-container">
+                    <div class="about-link">About PerfectCityFinder</div>
+                    <div class="about-link">Advertise with Us</div>
+                    <div class="about-link">Terms of Service</div>
+                </div>
+
+            
+        </div>
+    </div>

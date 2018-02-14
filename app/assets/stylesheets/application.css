@@ -13,3 +13,209 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .gutter{
+    margin: 0 16px;
+    }
+    /* unvisited link */
+    a:link {
+      color: rgb(255, 106, 80);
+    }
+    
+    /* visited link */
+    a:visited {
+      color: rgb(255, 106, 80);
+    }
+    
+    /* mouse over link */
+    a:hover {
+      color: rgb(255, 179, 80);
+    }
+    
+    /* selected link */
+    a:active {
+      color: rgb(255, 179, 80);
+    }
+    
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      background-color: white;
+      padding: 8px;
+    }
+    .main-container{
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      display: flex;
+    }
+    .col-container{
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .left-col{
+      flex: 3;
+      min-width: 0;
+      text-align: center;
+    
+    }
+    .right-col{
+      flex: 1;
+      margin-left: 15px;
+      overflow-y: hidden;
+      min-width: 0;
+      overflow: hidden;
+    }
+    
+    .logo {
+      width:50px;
+      height:50px;
+    }
+    .city-icon{
+      width:40px;
+      height:40px;
+    }
+    .icon-container{
+      flex: 1;
+      min-width: 0;
+      max-width: 35px;
+      text-align: left;
+    
+    }
+    .info-container{
+      flex: 6;
+      overflow-y: hidden;
+      margin-left: 10px;
+      min-width: 0;
+      overflow: hidden;
+      text-align: left;
+      padding: 0px;
+    }
+    
+    .center-heart{
+      position: relative;
+      top: 25%;
+    }
+    .heart-container{
+      flex: 1;
+      min-width: 0;
+      text-align: center;
+      font-size: 15px;
+      color: rgb(163, 160, 160);
+    }
+    
+    .city-name-container{
+      width: 100%;
+      vertical-align: top;
+    }
+    .stat-container{
+      width: 100%;
+      vertical-align: top;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+    }
+    
+    .about-container{
+      background: rgb(234, 245, 191);
+      padding: 10px;
+      margin-top: 30px;
+      width: 95%;
+    }
+    .about-link{
+      margin-top: 4px;
+    }
+    h1 {
+      font-family: 'Architects Daughter', cursive;
+      font-size: 30px;
+      display:inline;
+      line-height: .6;
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      display:inline;
+      text-align: center;
+    }
+    h3 {
+      font-family: 'Architects Daughter', cursive;
+      font-size: 18px;
+      display:inline;
+      text-align: right;
+    }
+    .top-align{
+      vertical-align: top;
+    }
+    
+    .underline {
+      border-bottom: 2px solid black;
+      display: inline-block;
+      line-height: 0.85;
+      width: 100%;
+    }
+    .on-style {
+      background: #93cfd1;
+      padding: 4px;
+      margin-top: 5px;
+      width: 95%;
+    }
+    
+    .city-item {
+      background: rgb(247, 247, 247);
+      padding: 5px;
+      margin-top: 10px;
+      width: 95%;
+      text-align: Left;
+      display: flex;
+      border-radius: 10px;
+    }
+    
+    .off-filters{
+      margin-top: 15px;
+    }
+    .on-filters{
+      margin-top: 15px
+    }
+    .off-style {
+      padding: 4px;
+      margin-top: 2px;
+      width: 95%;
+      
+    }
+    
+    .login {
+      position: absolute;
+      margin: 0;
+      line-height: 2.1;
+      bottom: 0px;
+      right: 7px;
+      font-size: 15px
+    }
+    
+    .dropdown {
+      font-size: 15px;
+    }
+    
+    select {
+      background: transparent;
+      border: 1px solid grey;
+      max-width: 95%;
+      font-size: 14px;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      background-color: rgb(235, 235, 235);
+    }
